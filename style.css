@@ -1,0 +1,150 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: #c40000;
+    --color-red-hover: #a00000;
+    --bg-page: #1e1e1e; /* dark gray background */
+    --footer-text: #4b4b4b; /* almost same as bg */
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-page);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header {
+    background: var(--color-black);
+    width: 100%;
+    max-width: 1200px;
+    padding: 4rem 3rem 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  /* --- Logo styling --- */
+  .name {
+    font-size: 3.6rem;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    user-select: text;
+  }
+
+  .name .max {
+    color: var(--color-red);
+    font-weight: 900;
+    transform: scaleY(2);
+    transform-origin: bottom;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 0.05em;
+  }
+
+  .name .butor {
+    color: var(--color-white);
+    font-weight: 400;
+    position: relative;
+    top: -0.15em;
+    display: inline-block;
+    text-transform: lowercase;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .contact {
+    background: var(--color-black);
+    border-radius: 12px;
+    padding: 1.8rem 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    color: var(--color-white);
+    box-shadow: 0 4px 12px rgba(196, 0, 0, 0.3);
+  }
+
+  .contact p {
+    margin: 0.6rem 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .contact strong {
+    font-weight: 700;
+  }
+
+  .facebook-link {
+    display: block;
+    margin: 2rem auto 0;
+    max-width: 100%;
+    text-align: center;
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: 1.2rem 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(196, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+  }
+
+  .facebook-link:hover {
+    background: var(--color-red-hover);
+  }
+
+  footer {
+    padding: 1.5rem 3rem;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    color: var(--footer-text);
+    font-size: 0.95rem;
+    margin-top: auto;
+  }
+
+  @media (max-width: 480px) {
+    header {
+      padding: 3rem 1.5rem 2rem;
+    }
+    .name {
+      font-size: 2.8rem;
+    }
+    main {
+      padding: 1rem 1.5rem;
+    }
+    .contact {
+      padding: 1.4rem 1.8rem;
+    }
+    .facebook-link {
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+    }
+    footer {
+      padding: 1rem 1.5rem;
+    }
+  }
